@@ -1,0 +1,134 @@
+.full-view-width {
+    width: 100vw;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.search-bar {
+    position: absolute;
+}
+
+.search-bar input {
+    height: 30px;
+    width: 150px;
+    padding: 0 30px;
+    margin: 10px 20px 0 0;
+
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+}
+
+.search-icon {
+    z-index: 1;
+    box-sizing: border-box;
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    color: rgba(255, 255, 255, 0.8);
+    
+    border: 1px solid;
+    border-radius: 100%;
+
+    position: relative;  
+    top: 29px;
+    left: 10px;
+}
+
+.search-icon::after {
+    display: block;
+    box-sizing: border-box;
+
+    width: 1px;
+    height: 4px;
+    content: "";
+    transform: rotate(-45deg);
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+.suggestion {
+    font-size: 0.75rem;
+    font-weight: 200;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    padding-left: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+
+    width: 205px;
+    height: 25px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-country {
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.suggestion:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.suggestion-active {
+    background-color: rgba(30, 144, 255, 0.5) !important;
+}
+
+@media only screen and (max-width: 1040px) {
+    .full-view-width {
+        align-items: center;
+    }
+
+    .search-bar  input {
+        margin: 10px 0 0 0;
+
+        padding-right: 42px;
+        text-align: center;
+
+        width: 250px;
+        height: 38px;
+
+        border-radius: 8px;
+
+        font-size: 16px;
+    }
+
+    .search-icon {
+        width: 12px;
+        height: 12px;
+          
+        top: 34px;
+        left: 10px;
+    }
+    
+    .search-icon::after {
+        height: 5px;
+    
+        top: 9px;
+        left: 10px;
+    }
+
+
+    .suggestion {
+        font-size: 16px;
+        font-weight: 300;
+    
+        padding-left: 10px;
+    
+        width: 312px;
+        height: 34px;
+    }
+}

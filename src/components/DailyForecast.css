@@ -1,0 +1,95 @@
+.daily-forecast {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+}
+
+.daily-conditions {
+    height: 269px;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.daily-condition-section {
+    display: grid;
+    grid-template-columns: 65px 45px 1fr;
+
+    font-weight: 500;
+    font-size: 13px;
+
+    align-items: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.daily-condition-section > .precipitation-image {
+    padding-bottom: 10px;
+}
+
+.daily-condition-section > .precipitation-image > .precipitation{
+    padding-left: 5px;
+}
+
+.daily-condition-section > .highest-lowest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-right: 5px;
+}
+
+.highest-lowest > .temperature {
+    margin: 0;
+    font-size: 15px;
+}
+
+.daily-condition-section .condition-icon {
+    width: 25px;
+    height: 23px;
+}
+
+.scale {
+    height: 5px;
+    width: 130px;
+
+    border-radius: 2px;
+
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+@media only screen and (max-width: 1040px) {
+    .daily-forecast {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+    }
+
+    .daily-conditions {
+        height: 280px;
+    }
+
+    .daily-condition-section {
+        grid-template-columns: 65px 52px 1fr;
+
+        font-size: 15px;
+    }
+
+    .daily-condition-section .condition-icon {
+        width: 28px;
+        height: 27px;
+    }
+
+    .highest-lowest > .temperature {
+        font-size: 16px;
+    }
+
+    .scale {
+        height: 7px;
+        margin-top: 9px;
+        border-radius: 3px;
+    }
+
+    .daily-condition-section > .precipitation-image > .precipitation{
+        margin-top: -8px;
+        padding-left: 5px;
+    }
+}

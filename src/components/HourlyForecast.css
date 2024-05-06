@@ -1,0 +1,134 @@
+.hourly-forecast {
+    grid-column: 1 / span 4;
+}
+
+.conditions {
+    overflow-x: scroll;
+}
+
+.conditions::-webkit-scrollbar {
+    display: none;
+}
+
+.condition-sections-grid {
+    margin-left: -10px;
+
+    width: auto;
+    height: 95px;
+    
+    display: grid;
+    grid-template-columns: repeat(24, 55px);
+}
+
+.condition-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.condition-section > * {
+    margin: 2px;
+    text-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+}
+
+.condition-section > .precipitation-image {
+    text-align: center;
+    
+    margin-top: -2px;
+    margin-bottom: 7px;
+}
+
+.precipitation-image > .precipitation {
+    color: rgb(118, 193, 218);
+
+    margin-top: -6px;
+    margin-bottom: -12px;
+    
+    font-size: 0.5rem;
+}
+
+.condition-section > .temperature {
+    margin-top: -2px;
+    
+    font-size: 15px;
+}
+
+.condition-section > .sun-state {
+    font-size: 11px;
+
+    margin-bottom: 5px;
+}
+
+.condition-icon {
+    width: 20px;
+    height: 19px;
+
+    -webkit-filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.15));
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.15));
+}
+
+.sun-state-icon {
+    width: 20px;
+    height: 20px;
+
+    -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.15));
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.15));
+}
+
+@media only screen and (max-width: 1040px) {
+    .hourly-forecast {
+        grid-column: 1 / span 2;
+    }
+
+    .condition-sections-grid {
+        margin-left: -5px;
+        margin-top: -5px;
+    
+        width: auto;
+        height: 105px;
+        
+        display: grid;
+        grid-template-columns: repeat(24, 55px);
+    }
+
+    .condition-section {
+        font-size: 13px;
+    }
+
+    .condition-icon {
+        width: 25px;
+        height: 24px;
+    }
+    
+    .sun-state-icon {
+        width: 25px;
+        height: 25px;
+
+        margin-top: -2px;
+
+        position: relative;
+        top: 3px;
+    }
+
+    .condition-section > .temperature {
+        font-size: 16px;
+    }
+    
+    .condition-section > .sun-state {
+        font-size: 14px;
+    }
+
+    .condition-section > .precipitation-image {
+        margin-top: -3px;
+        margin-bottom: 6px;
+    }
+    
+    .precipitation-image > .precipitation {       
+        font-size: 0.55rem;
+    }
+}

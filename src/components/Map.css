@@ -1,0 +1,34 @@
+.map {
+    grid-column: 5 / span 2;
+    grid-row: 1 / 3;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.precipitation-map {
+    background-color: rgba(102, 102, 102, 0.1);
+
+    border-radius: 10px;
+    height: 267px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.precipitation-map-image {
+    z-index: 1;
+    background: none;
+    filter: brightness(0%);
+    width: 100%;
+}
+
+@media only screen and (max-width: 1040px) {
+    .map {
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 2;
+    }
+
+    .precipitation-map {
+        height: 275px;
+    }
+}

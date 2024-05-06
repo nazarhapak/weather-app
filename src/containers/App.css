@@ -1,0 +1,78 @@
+.application {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgets {
+    width: 1000px;
+    height: 470px;
+
+    align-self: center;
+
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.widgets > * {
+    border-radius: 15px;
+
+    padding: 0 10px;
+    
+    background-color: rgba(12, 12, 12, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+
+    backdrop-filter: blur(5px);
+}
+
+.widget-name {
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.widget-icon {
+    width: 10px;
+    height: 10px;
+
+    filter: invert(100%) opacity(0.8);
+
+    margin-right: 4px;
+    
+    position: relative;
+    top: 1px;
+}
+
+@media only screen and (max-width: 1040px) {
+    .widgets {
+        width: 350px;
+        height: auto;
+    
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+
+        margin-bottom: 20px;
+    }
+
+    .widget-name {
+        font-size: 12px;
+    }
+
+    .widget-icon {
+        width: 11px;
+        height: 11px;
+        
+        margin-right: 6px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .widgets {
+        width: 310px;
+    }
+}

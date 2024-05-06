@@ -1,0 +1,31 @@
+.humidity {
+    grid-row: 3;
+    grid-column: 5;
+}
+
+.humidity > .percentage {
+    font-size: 25px;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.humidity > .description {
+    margin-top: 35px;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 1040px) {
+    .humidity {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .humidity > .percentage {
+        font-size: 28px;
+    }
+
+    .humidity > .description {
+        margin-top: 37px;
+        font-size: 11px;
+    }
+}

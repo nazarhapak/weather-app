@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/weather-app/static/css/main.14d6b672.css",
+    "main.js": "/weather-app/static/js/main.7eda2048.js",
+    "static/js/453.0ccb7fb4.chunk.js": "/weather-app/static/js/453.0ccb7fb4.chunk.js",
+    "static/media/Poppins-ThinItalic.ttf": "/weather-app/static/media/Poppins-ThinItalic.042c91127451b9971c8c.ttf",
+    "static/media/Poppins-ExtraLightItalic.ttf": "/weather-app/static/media/Poppins-ExtraLightItalic.7857045f7d7ba5d89c53.ttf",
+    "static/media/Poppins-LightItalic.ttf": "/weather-app/static/media/Poppins-LightItalic.06592af173902b20352c.ttf",
+    "static/media/Poppins-Italic.ttf": "/weather-app/static/media/Poppins-Italic.e02f5636f1c9a3968267.ttf",
+    "static/media/Poppins-MediumItalic.ttf": "/weather-app/static/media/Poppins-MediumItalic.70e2074524e2edbfd2a8.ttf",
+    "static/media/Poppins-SemiBoldItalic.ttf": "/weather-app/static/media/Poppins-SemiBoldItalic.8905df6dd193fbf9064d.ttf",
+    "static/media/Poppins-BoldItalic.ttf": "/weather-app/static/media/Poppins-BoldItalic.f7510e8ee03b40fcefa4.ttf",
+    "static/media/Poppins-ExtraBoldItalic.ttf": "/weather-app/static/media/Poppins-ExtraBoldItalic.6a8723048750106c9f80.ttf",
+    "static/media/Poppins-BlackItalic.ttf": "/weather-app/static/media/Poppins-BlackItalic.9186732f50e80e2e2b81.ttf",
+    "static/media/Poppins-Thin.ttf": "/weather-app/static/media/Poppins-Thin.64d0758f6032bbe9823d.ttf",
+    "static/media/Poppins-ExtraLight.ttf": "/weather-app/static/media/Poppins-ExtraLight.e0956b3d1b7f8036e8e2.ttf",
+    "static/media/Poppins-Light.ttf": "/weather-app/static/media/Poppins-Light.be86c23ccc9cb2e1f4f1.ttf",
+    "static/media/Poppins-Regular.ttf": "/weather-app/static/media/Poppins-Regular.1c701c9a6b587802e3d0.ttf",
+    "static/media/Poppins-Medium.ttf": "/weather-app/static/media/Poppins-Medium.b59f6a636397975c5409.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/weather-app/static/media/Poppins-SemiBold.5981b450a68d5134225b.ttf",
+    "static/media/Poppins-Bold.ttf": "/weather-app/static/media/Poppins-Bold.e2abc8f5e9a67ea669ea.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/weather-app/static/media/Poppins-ExtraBold.ea0f2525d7e28cedeaa2.ttf",
+    "static/media/Poppins-Black.ttf": "/weather-app/static/media/Poppins-Black.6b6cc942e505407d5353.ttf",
+    "static/media/visibility.png": "/weather-app/static/media/visibility.32d38dc4fc06883bfbcb.png",
+    "static/media/feels-like.png": "/weather-app/static/media/feels-like.17cbf9a93c8df43d5083.png",
+    "static/media/sunrise.png": "/weather-app/static/media/sunrise.ab66588d3d85773a5e40.png",
+    "index.html": "/weather-app/index.html",
+    "main.14d6b672.css.map": "/weather-app/static/css/main.14d6b672.css.map",
+    "main.7eda2048.js.map": "/weather-app/static/js/main.7eda2048.js.map",
+    "453.0ccb7fb4.chunk.js.map": "/weather-app/static/js/453.0ccb7fb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14d6b672.css",
+    "static/js/main.7eda2048.js"
+  ]
+}

@@ -8,9 +8,9 @@ const WelcomePage = ({onSubmit}) => {
         <div className='welcome-page'>
             <div className='description'>
                 <h2>Welcome to Weather Application!</h2>
-                <p>Enter location to see weather</p>
             </div>
             <img alt="welcome" src={image} className='welcome-image'></img>
+            <p>Enter location to see weather</p>
             <SearchBar onSubmit={onSubmit}/>
         </div>
     );

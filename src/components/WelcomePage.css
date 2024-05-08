@@ -12,8 +12,8 @@
 
 .welcome-page > .description {
     width: 312px;
-    margin-top: -250px;
-    margin-bottom: -60px;
+    margin-top: -200px;
+    margin-bottom: -40px;
 
     text-align: center;
     line-height: 25px;
@@ -26,9 +26,10 @@
     font-weight: 300;
 }
 
-.description > p {
+.welcome-page > p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
+    margin-bottom: -10px;
 }
 
 .welcome-image {
@@ -91,7 +92,7 @@
     }
 
     .welcome-page > .description {
-        margin-top: -300px;
+        margin-top: -250px;
     }
 
     .welcome-page .search-bar  input {
@@ -120,7 +121,8 @@
         font-weight: 300;
     }
     
-    .description > p {
+    .welcome-page > p {
         font-size: 16px;
+        margin-bottom: -5px;
     }
 }

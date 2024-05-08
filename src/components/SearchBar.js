@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './SearchBar.css';
 
 document.addEventListener("click", () => {
+  document.getElementById("searchInput").style.borderRadius = "5px"
   const autocomplete = document.getElementById("autocomplete");
     const suggestions = autocomplete.querySelectorAll("div");
     

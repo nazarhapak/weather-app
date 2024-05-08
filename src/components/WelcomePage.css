@@ -1,0 +1,126 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(to left top, #757F9A , #92959a);
+}
+
+.welcome-page > .description {
+    width: 312px;
+    margin-top: -250px;
+    margin-bottom: -60px;
+
+    text-align: center;
+    line-height: 25px;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.description > * {
+    margin: 20px 0 0 0;
+    font-weight: 300;
+}
+
+.description > p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.welcome-image {
+    width: 350px;
+    height: 350px;
+
+    margin-bottom: -80px;
+}
+
+.welcome-page .full-view-width {
+    align-items: center;
+}
+
+.welcome-page .search-bar  input {
+    margin: 10px 0 0 0;
+
+    padding-right: 42px;
+    text-align: center;
+
+    width: 250px;
+    height: 33px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.welcome-page .search-icon {
+    width: 12px;
+    height: 12px;
+      
+    top: 32px;
+    left: 10px;
+}
+
+.welcome-page .search-icon::after {
+    height: 5px;
+
+    top: 9px;
+    left: 10px;
+}
+
+
+.welcome-page .suggestion {
+    font-size: 14px;
+    font-weight: 300;
+
+    padding-left: 10px;
+
+    width: 312px;
+    height: 32px;
+}
+
+@media only screen and (max-width: 1040px) {
+    .welcome-image {
+        width: 270px;
+        height: 270px;
+    
+        margin-bottom: -50px;
+    }
+
+    .welcome-page > .description {
+        margin-top: -300px;
+    }
+
+    .welcome-page .search-bar  input {
+        width: 250px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+    
+    .welcome-page .search-icon {
+        top: 34px;
+    }
+    
+    .welcome-page .suggestion {
+        font-size: 16px;
+        height: 34px;
+    }
+
+    .welcome-page > .description {
+        line-height: 35px;
+        font-size: 20px;
+    }
+    
+    .description > * {
+        margin: 10px 0 0 0;
+        font-weight: 300;
+    }
+    
+    .description > p {
+        font-size: 16px;
+    }
+}

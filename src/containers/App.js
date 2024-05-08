@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import WelcomePage from '../components/WelcomePage';
 import SearchBar from '../components/SearchBar';
 import CurrentWeather from '../components/CurrentWeather';
 import HourlyForecast from '../components/HourlyForecast';
@@ -16,6 +17,7 @@ class App extends Component {
   constructor () {
     super();
     this.state = {
+      route: "Welcome",
       name: "Enter city name",
       weather: {
           "id": 804,
@@ -23,8 +25,8 @@ class App extends Component {
           "description": "overcast clouds",
           "icon": "04n"
       },
-      time: "19:20",
-      hour: "19",
+      time: "00:00",
+      hour: "00",
       temp: 0,
       temp_max: 0,
       temp_min: 0,
@@ -57,6 +59,7 @@ class App extends Component {
 
   onSubmit = (value) => {
     this.getLocationCoordinates(value);
+    this.setState({route: "Weather"})
   }
 
   getLocationCoordinates(location) {
@@ -317,7 +320,12 @@ class App extends Component {
   } 
 
   render () {
-    const {name, weather, time, hour, temp, temp_max, temp_min, hourly_forecast, daily_forecast, sunrise, sunset, map_url, precipitation_url, wind, feels_like, humidity, visibility} = this.state;
+    const {route, name, weather, time, hour, temp, temp_max, temp_min, hourly_forecast, daily_forecast, sunrise, sunset, map_url, precipitation_url, wind, feels_like, humidity, visibility} = this.state;
+    if (route === "Welcome") {
+      return (
+        <WelcomePage onSubmit={this.onSubmit}/>
+      )
+    }
     return (
       <div className='application'>
         <Background weather={weather} time={time} sunrise={sunrise} sunset={sunset}/>

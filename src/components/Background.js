@@ -3,16 +3,24 @@ import "./Background.css";
 
 
 const Background = ({weather, time, sunset, sunrise}) => {
+    let sunrise_minutes;
+    if (sunrise) {sunrise_minutes = Number(sunrise.split(":")[0] * 60 + sunrise.split(":")[1])};
+
+    let sunset_minutes;
+    if (sunset) {sunset_minutes = Number(sunset.split(":")[0] * 60 + sunset.split(":")[1])}
+
+    const current_minutes = Number(time.split(":")[0] * 60 + time.split(":")[1]);
+    
     const night = () => {
-        let sunrise_minutes;
-        if (sunrise) {sunrise_minutes = Number(sunrise.split(":")[0] * 60 + sunrise.split(":")[1])};
+        if ((sunset_minutes + 30 <= current_minutes) || (0 <= current_minutes && current_minutes < sunrise_minutes - 30)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-        let sunset_minutes;
-        if (sunset) {sunset_minutes = Number(sunset.split(":")[0] * 60 + sunset.split(":")[1])}
-
-        const current_minutes = Number(time.split(":")[0] * 60 + time.split(":")[1]);
-
-        if ((sunset_minutes <= current_minutes) || (0 <= current_minutes && current_minutes < sunrise_minutes)) {
+    const dayTransition = () => {
+        if (((sunset_minutes <= current_minutes) && (sunset_minutes < sunset_minutes + 30)) || ((0 <= current_minutes && current_minutes < sunrise_minutes) && (sunrise_minutes - 30 < sunrise_minutes))) {
             return true;
         } else {
             return false;
@@ -21,7 +29,20 @@ const Background = ({weather, time, sunset, sunrise}) => {
 
     const getBackgroundGradient = () => {
         if (night()) {
-            return "linear-gradient(to left top, #403d3d, #1a1a1c)";
+            return "linear-gradient(to left top, #191717,#312a53)";
+        }
+
+        if (dayTransition()) {
+            switch (weather.main) {
+                case "Thunderstorm" || "Tornado":
+                  return "linear-gradient(to left top, #2e323a , #33445f)";
+                case "Drizzle" || "Rain" || "Squall":
+                  return "linear-gradient(to left top, #81846e, #94a5c2)";
+                case "Clouds":
+                    return "linear-gradient(to left top, #757F9A , #92959a)";
+                default:
+                    return "linear-gradient(to left top, #251643, #5a352d)";
+            }
         }
         switch (weather.main) {
             case "Thunderstorm" || "Tornado":

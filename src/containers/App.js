@@ -72,7 +72,7 @@ class App extends Component {
     )
       .then((response) => response.json())
       .then((data) => {
-        if (data.results.length > 0) {
+        if (data.length > 0) {
           const latitude = data[0].lat;
           const longitude = data[0].lon;
           const name = data[0].display_name.split(",")[0];

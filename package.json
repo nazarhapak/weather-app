@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "description": "Weather Application",
-  "homepage": "https://34shifty.github.io/weather-app",
+  "homepage": "https://nazarhapak.github.io/weather-app",
   "private": true,
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.6",

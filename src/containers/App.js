@@ -18,11 +18,11 @@ class App extends Component {
     super();
     this.state = {
       route: "Welcome",
-      name: "Enter city name",
+      name: "Data is loading...",
       weather: {
         id: 804,
-        main: "Clouds",
-        description: "overcast clouds",
+        main: "Clear",
+        description: "clear",
         icon: "04n",
       },
       time: "00:00",
